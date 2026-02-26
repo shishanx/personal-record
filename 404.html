@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <script type="text/javascript">
-    var repoName = 'personal-record';
-    var l = window.location;
-    var path = l.pathname.replace('/' + repoName, '');
-    
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      '/' + repoName + '/?p=' + path.replace(/&/g, '~and~') +
-      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
-  </script>
-</head>
-<body></body>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      var repoName = 'personal-record'; 
+      var l = window.location;
+      var path = l.pathname.split('/' + repoName)[1] || '';
+      var query = path + l.search + l.hash;
+
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/' + repoName + '/?p=' + encodeURIComponent(query)
+      );
+    </script>
+  </head>
+  <body></body>
 </html>
