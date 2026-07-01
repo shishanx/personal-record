@@ -1,0 +1,1 @@
+import{j as n}from"./jsx-runtime-u17CrQMm.js";function x(t){let e=t.content;return n.jsx("div",{className:"fixed max-w-[500px] w-full top-0 p-2 flex items-center bg-white/60 text-black",children:e})}export{x as N};
