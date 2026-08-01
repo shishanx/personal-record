@@ -1,1 +1,0 @@
-import{p as e}from"./chunk-EPOLDU6W-Cbkwubdd.js";function s(l){let n=l.content;return e.jsx("main",{className:"w-full flex items-center justify-center select-none",children:e.jsx("div",{className:"w-full flex flex-col items-center",children:e.jsx("div",{className:"max-w-[400px] w-full h-lvh bg-amber-700",children:n})})})}export{s as P};
